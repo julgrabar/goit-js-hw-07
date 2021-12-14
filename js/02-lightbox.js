@@ -21,4 +21,4 @@ function createGalleryEl (galleryItems){
 }
 refs.galleryContainer.insertAdjacentHTML('beforeEnd' , refs.galleryMarkup);
 
-new SimpleLightbox('.gallery a' , {captionDelay: 250 , captionsData: 'alt'});
+new SimpleLightbox('.gallery a' , {captionDelay: 250 , captionsData: 'alt', captionPosition: 'bottom'});
