@@ -20,11 +20,5 @@ function createGalleryEl (galleryItems){
     .join('')
 }
 refs.galleryContainer.insertAdjacentHTML('beforeEnd' , refs.galleryMarkup);
-refs.galleryContainer.addEventListener('click', onElementClick);
-function onElementClick(evt){
-    evt.preventDefault();
-    if(!evt.target.closest('.gallery__item')){
-        return;
-    };
-}
+
 var lightbox = new SimpleLightbox('.gallery a' , {captionDelay: 250 , captionsData: 'alt'});
